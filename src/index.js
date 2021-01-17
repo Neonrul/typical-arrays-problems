@@ -1,12 +1,5 @@
+exports.min = (array = []) =>  Math.min(0, ...array)
 
-exports.min = function min (array) {
-  return 0;
-}
+exports.max = (array = []) => Math.max(0, ...array)
 
-exports.max = function max (array) {
-  return 0;
-}
-
-exports.avg = function avg (array) {
-  return 0;
-}
+exports.avg = (array = []) => array.length !== 0 ? array.reduce((sum, item) => sum + item, 0) / array.length : 0
